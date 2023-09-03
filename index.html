@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod 2 Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>
+        Student Enrollment Form
+    </h1>
+
+    <div class="wrapper">
+        <form class="form" id="studentForm">
+
+            <h2>Student Form</h2>
+
+            <div class="spacing">
+                <div>
+                    <label for="firstName">First Name: </label>
+                </div>
+                <div>
+                    <input type="text" id="firstName" required>
+                </div>
+            </div>
+            <div class="spacing">
+                <div>
+                    <label for="lastName">Last Name: </label>
+                </div>
+                <div>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+
+            <div class="spacing">
+                <div>
+                    <label for="programs">Programs:</label>
+                </div>
+                <div>
+                    <select name="programs" id="programs" required>
+                        <option value="IT - Computer Support Specialist">IT - Computer Support Specialist</option>
+                        <option value="IT - Cybersecurity Specialist">IT - Cybersecurity Specialist</option>
+                        <option value="IT - Data and Analytics Specialist">IT - Data and Analytics Specialist</option>
+                        <option value="IT - Network Specialist">IT - Network Specialist</option>
+                        <option value="IT - Web and Software Developer">IT - Web and Software Developer</option>
+                        <option value="Front End Web Development">Front End Web Development</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="spacing">
+                <label for="enrollDate">Enroll Date:</label>
+                <input type="date" id="enrollDate" required>
+            </div>
+
+            <div id="submit">
+                <input type="submit" value="Add Student" id="addStudent">
+            </div>
+        </form>
+        
+        <div id="enroll-wrapper">
+            <div id="enrolledStudent">
+        
+            </div>
+        </div>
+        </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
